@@ -13,7 +13,7 @@ function Home() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/users');
+                const response = await axios.get('https://server-gkwx.onrender.com/users');
                 setData(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -31,7 +31,7 @@ function Home() {
         if (confirm) {
             const fetchData = async () => {
                 try {
-                    await axios.delete('http://localhost:3000/users/' + id);
+                    await axios.delete('https://server-gkwx.onrender.com/users/' + id);
                     console.log('User deleted successfully');
                     window.location.reload();
                 } catch (error) {
