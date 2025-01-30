@@ -23,7 +23,7 @@ function EditUser() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-              const response = await axios.get('http://localhost:3000/users/'+id);
+              const response = await axios.get('https://server-gkwx.onrender.com/users/'+id);
               setValues(response.data);
             } catch (error) {
               console.error('Error fetching data:', error);
@@ -41,7 +41,7 @@ function EditUser() {
       event.preventDefault();
       const fetchData = async () => {
         try {
-          await axios.put('http://localhost:3000/users/'+id, values);
+          await axios.put('https://server-gkwx.onrender.com/users/'+id, values);
        
           navigate('/');
   
