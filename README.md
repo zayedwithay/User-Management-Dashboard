@@ -83,6 +83,23 @@ npx json-server --watch db.json --port 5000
 4. **Delete**: Delete users directly from the Home page using a DELETE request.
 
 
+## **Challenges Faced**
+State Management: Handling API calls and updates across pages.
+Routing Issues: Dynamic routes (/update/:id, /read/:id) required correct use of useParams().
+API Handling: JSON Server setup and CORS configuration.
+UI Consistency: Adjusting Bootstrap styling for a clean look.
+Delete Confirmation: Added prompt to prevent accidental deletions.
+
+
+
+## **Future Improvements**
+Replace JSON Server with a real backend (Node.js + MongoDB).
+Enhanced Form Validation using Formik & Yup.
+Global State Management via Redux or Context API.
+Better UI with Material UI or Tailwind CSS.
+
+
+
 
 ## **Conclusion**
 This app demonstrates a simple yet powerful full-stack CRUD application using modern tools like React, Vite, Axios, and JSON Server, with an intuitive UI built using Bootstrap and Material UI Icons.
