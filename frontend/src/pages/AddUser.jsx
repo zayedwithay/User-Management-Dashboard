@@ -24,7 +24,7 @@ const [values, setValues] = React.useState({
     event.preventDefault();
     const fetchData = async () => {
       try {
-        await axios.post('http://localhost:3000/users', values);
+        await axios.post('https://api-livid-pi.vercel.app/db.json', values);
      
         navigate('/');
 
