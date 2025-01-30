@@ -15,7 +15,7 @@ function ReadUser() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/users/' + id);
+        const response = await axios.get('https://server-gkwx.onrender.com/users/' + id);
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
